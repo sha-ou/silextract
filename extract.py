@@ -17,6 +17,9 @@ id_pattern = r'_id_Vg_20\.log'
 ig_pattern = r'_ig_300K\.log'
 
 def extract_slop(outf=None):
+    '''\
+Extract max slope
+    '''
     if outf is None:
         outf = 'slope.csv'
     if os.path.exists(outf):
